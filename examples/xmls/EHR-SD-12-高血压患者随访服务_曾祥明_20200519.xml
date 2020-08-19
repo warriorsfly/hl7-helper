@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:mif="urn:hl7-org:v3/mif" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ..\sdschemas\CDA.xsd">
+  <realmCode code="CN"/>
+  <typeId extension="POCD_MT000040" root="2.16.840.1.113883.1.3"/>
+  <templateId root="2.16.156.10011.2.1.1.12"/>
+  <id root="2.16.156.10011.1.1.1.4" extension="1135596"/>
+  <code code="HSDB04.01" codeSystem="2.16.156.10011.2.4" codeSystemName="卫生信息共享文档规范编码体系"/>
+  <title>高血压患者随访服务</title>
+  <effectiveTime xsi:type="TS" value="20200803"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" displayName="正常访问保密级别"/>
+  <languageCode code="zh-CN"/>
+  <setId/>
+  <versionNumber/>
+  <recordTarget typeCode="RCT" contextControlCode="OP">
+    <patientRole classCode="PAT">
+      <id root="2.16.156.10011.1.2" extension="42010600510600823"/>
+      <addr use="H">
+        <houseNumber/>
+        <streetName>粮道街办事处</streetName>
+        <county>武昌区</county>
+        <city>武汉市</city>
+        <state>湖北省</state>
+        <postalCode/>
+      </addr>
+      <telecom value="13971093282"/>
+      <patient>
+        <id root="2.16.156.10011.1.3" extension="42010619630312203X"/>
+        <name>曾祥明</name>
+        <administrativeGenderCode code="1" displayName="男性" codeSystem="2.16.156.10011.2.3.3.4" codeSystemName="生理性别代码表(GB/T 2261.1)"/>
+        <birthTime value="19630312"/>
+        <maritalStatusCode code="90" displayName="未说明的婚姻状况" codeSystem="2.16.156.10011.2.3.3.5" codeSystemName="婚姻状况代码表(GB/T 2261.2)"/>
+        <ethnicGroupCode code="01" displayName="汉族" codeSystem="2.16.156.10011.2.3.3.3" codeSystemName="民族类别代码表(GB 3304)"/>
+        <birthplace>
+          <place classCode="PLC" determinerCode="INSTANCE">
+            <addr>湖北省武汉市武昌区粮道街民主路467号</addr>
+          </place>
+        </birthplace>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author typeCode="AUT" contextControlCode="OP">
+    <time xsi:type="TS" value="20200519"/>
+    <assignedAuthor classCode="ASSIGNED">
+      <id root="2.16.156.10011.1.7" extension="534"/>
+      <assignedPerson>
+        <name>汤文</name>
+      </assignedPerson>
+      <representedOrganization>
+        <id root="2.16.156.10011.1.5" extension="4413635602"/>
+        <name>武汉市武昌区中华路街社区卫生服务中心</name>
+        <addr>武汉市武昌区胭脂路荆南街14号</addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian typeCode="CST">
+    <assignedCustodian classCode="ASSIGNED">
+      <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id root="2.16.156.10011.1.6" extension="7375190934"/>
+        <name>武汉市武昌区卫生健康局</name>
+        <telecom value="027-88870977"/>
+        <addr>武汉市武昌区胭脂路荆南街14号</addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <code displayName="随访事件"/>
+          <title>随访事件章节</title>
+          <entry>
+            <observation classCode="CASE" moodCode="EVN">
+              <code code="DE06.00.108.00" codeSystem="2.16.156.10011.2.2.1" displayName="随访方式代码" codeSystemName="卫生信息数据元目录"/>
+              <effectiveTime value="20200519"/>
+              <value xsi:type="CD" code="3" codeSystem="2.16.156.10011.2.3.1.183" displayName="电话" codeSystemName="随访方式代码表"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="11450-4" displayName="PROBLEM LIST" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>症状章节</title>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <statusCode code="complete"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="DE04.01.116.00" displayName="症状章节代码" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+                  <value xsi:type="CD" code="Z00.000" displayName="一般性医学检查" codeSystem="2.16.156.10011.2.3.3.11" codeSystemName="ICD-10"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="DE04.01.118.00" displayName="症状名称条目代码" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+                  <value xsi:type="ST">一般性医学检查</value>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" displayName="VITAL SIGNS" codeSystemName="LOINC"/>
+          <title>生命体征章节</title>
+          <entry>
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <statusCode code="complete"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="DE04.10.174.00" displayName="收缩压" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+                  <value xsi:type="PQ" unit=" mmHg" value="150"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="DE04.10.176.00" displayName="舒张压" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+                  <value xsi:type="PQ" unit="mmHg" value="90"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE04.10.188.00" displayName="体重" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+              <value xsi:type="PQ" unit="kg" value="55.0"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE04.10.167.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="身高"/>
+              <value xsi:type="PQ" value="171.0" unit="cm"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE05.10.075.00" displayName="体质指数" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+              <value xsi:type="PQ" unit="Kg/m2" value="18.81"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE04.10.206.00" displayName="心率" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+              <value xsi:type="PQ" unit="次/min" value="80"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE04.10.143.00" displayName="其他阳性体征条目" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+              <value xsi:type="ST"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code/>
+          <title>生活方式章节</title>
+          <entry>
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <statusCode code="complete"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="DE03.00.053.00" displayName="日吸烟量条目" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+                  <value xsi:type="PQ" unit="支" value="0"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <statusCode code="complete"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="DE03.00.054.00" displayName="日饮酒量条目" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+                  <value xsi:type="PQ" unit="两" value="0"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <statusCode code="complete"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="DE03.00.087.00" displayName="运动频率条目" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+                  <value xsi:type="CD" code="4" codeSystem="2.16.156.10011.2.3.1.23" displayName="不运动" codeSystemName="身体活动频率代码表"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="DE03.00.088.00" displayName="运动时长指导条目" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+                  <value xsi:type="IVL_TS">
+                    <width unit="min" value="0"/>
+                  </value>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE03.00.094.00" displayName="摄盐观察条目" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+              <value xsi:type="CD" codeSystem="2.16.156.10011.2.3.2.25" codeSystemName="摄盐量分级代码表"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE05.10.083.00" displayName="心理调整观察条目" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+              <value xsi:type="CD" code="1" codeSystem="2.16.156.10011.2.3.2.26" displayName="良好" codeSystemName="心理调整评价结果代码表"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE05.10.068.00" displayName="遵医行为观察条目" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+              <value xsi:type="CD" code="1" codeSystem="2.16.156.10011.2.3.2.27" codeSystemName="随访遵医行为评价结果代码表"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" displayName="TREATMENT PLAN" codeSystemName="LOINC"/>
+          <title>治疗计划章节</title>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE04.10.188.00" displayName="DE04.10.188.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+              <value xsi:type="ST">55.0</value>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE05.10.075.00" displayName="DE05.10.075.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+              <value xsi:type="ST">18.81</value>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE03.00.053.00" displayName="DE03.00.053.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+              <value xsi:type="PQ" unit="支" value="0"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE03.00.054.00" displayName="DE03.00.054.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+              <value xsi:type="PQ" unit="两" value="0"/>
+            </observation>
+          </entry>
+          <entry>
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <statusCode code="complete"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="DE03.00.087.00" displayName="DE03.00.087.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+                  <value xsi:type="CD" code="22" codeSystem="2.16.156.10011.2.3.1.23" displayName="3次/周～4次/周" codeSystemName="身体活动频率代码表"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE03.00.055.00" displayName="DE03.00.055.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+              <value xsi:type="CD" code="1" codeSystem="2.16.156.10011.2.3.2.25" codeSystemName="目标摄盐量分级代码值" displayName="轻"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="STUDIES SUMMARY"/>
+          <title>实验室检查章节</title>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" displayName="HISTORY OF MEDICATION USE" codeSystemName="LOINC"/>
+          <title>用药章节</title>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE06.00.164.00" displayName="DE06.00.164.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+              <value xsi:type="CD" code="1" displayName="未使用" codeSystem="2.16.156.10011.2.3.1.157" codeSystemName="中药类别代码"/>
+            </observation>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <routeCode code="9" displayName="其他用药途径" codeSystem="2.16.156.10011.2.3.1.158" codeSystemName="用药途径代码表"/>
+              <doseQuantity unit="mg"/>
+              <rateQuantity unit="日"/>
+              <consumable>
+                <manufacturedProduct>
+                  <manufacturedLabeledDrug>
+                    <code/>
+                    <name>无</name>
+                  </manufacturedLabeledDrug>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <code/>
+                  <value code="3" displayName="不服药" codeSystem="2.16.156.10011.2.3.2.12" codeSystemName="服药依从性代码表" xsi:type="CD"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <code/>
+                  <value xsi:type="ST">无;</value>
+                  <precondition>
+                    <criterion>
+                      <value xsi:type="BL" value="false"/>
+                    </criterion>
+                  </precondition>
+                </observation>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="X-ASSESS" displayName="ASSESSMENTS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>健康评估章节</title>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE05.10.066.00" displayName="随访评估结果代码" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+              <value code="2" displayName="控制不满意" codeSystem="2.16.156.10011.2.3.1.150" codeSystemName="随访评价结果代码" xsi:type="CD"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="18776-1" codeSystem="2.16.840.1.113883.6.1" displayName="referal" codeSystemName="LOINC"/>
+          <title>转诊建议章节</title>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE06.00.174.00" displayName="转诊标志代码" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+              <value xsi:type="BL" value="false"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code displayName="下次随访日期"/>
+          <title>下次随访安排章节</title>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="DE06.00.109.00" displayName="下次随访日期" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录"/>
+              <value xsi:type="TS" value="20200602"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
