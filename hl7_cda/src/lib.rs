@@ -1,3 +1,4 @@
+pub mod cda;
 pub mod patient;
 #[cfg(test)]
 mod tests {

@@ -7,6 +7,6 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-cleaner_core = { path = "../hl7_core" }
+hl7_core = { path = "../hl7_core" }
 quick-xml= { version = "0.18", features = [ "serialize" ] }
 serde = { version = "1", features = [ "derive" ] }
