@@ -1,4 +1,5 @@
 /// 第1部分:个人基本健康信息登记
+use hl7_core::model::{Code, Id, Language, RealmCode, XTime};
 use serde::Deserialize;
 
 /// 地域代码
@@ -6,7 +7,7 @@ use serde::Deserialize;
 pub struct PersonalBasicHealth {
     /// 区域代码
     #[serde(rename = "realmCode", default)]
-    pub realm_code: RealmCodse,
+    pub realm_code: RealmCode,
     /// 文档注册模型
     #[serde(rename = "typeId", default)]
     pub type_id: Id,
