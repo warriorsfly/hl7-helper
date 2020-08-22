@@ -6,29 +6,29 @@ pub struct Address {
     pub xuse: String,
     /// 值可以为空
     #[serde(rename = "houseNumber", default)]
-    pub house_number: Option<String>,
+    pub house_number: String,
     #[serde(rename = "streetName", default)]
-    pub street_name: Option<String>,
+    pub street_name: String,
     #[serde(rename = "township", default)]
-    pub town_ship: Option<String>,
-    pub county: Option<String>,
-    pub city: Option<String>,
-    pub state: Option<String>,
+    pub town_ship: String,
+    pub county: String,
+    pub city: String,
+    pub state: String,
     #[serde(rename = "postalCode", default)]
-    pub postal_code: Option<String>,
+    pub postal_code: String,
 }
 
 impl Default for Address {
     fn default() -> Self {
         Self {
             xuse: "H".into(),
-            house_number: Some("".into()),
-            street_name: Some("".into()),
-            town_ship: Some("".into()),
-            county: Some("".into()),
-            city: Some("".into()),
-            state: Some("".into()),
-            postal_code: Some("".into()),
+            house_number: "".into(),
+            street_name: "".into(),
+            town_ship: "".into(),
+            county: "".into(),
+            city: "".into(),
+            state: "".into(),
+            postal_code: "".into(),
         }
     }
 }
