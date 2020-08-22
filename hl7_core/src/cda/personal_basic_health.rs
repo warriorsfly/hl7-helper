@@ -1,5 +1,5 @@
 /// 第1部分:个人基本健康信息登记
-use hl7_core::model::{Code, Id, Language, RealmCode, XTime};
+use model::{Code, Id, Language, RealmCode, XTime};
 use serde::Deserialize;
 
 /// 地域代码
