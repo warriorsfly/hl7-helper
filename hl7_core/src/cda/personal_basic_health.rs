@@ -27,4 +27,10 @@ pub struct PersonalBasicHealth {
     /// 语言 默认:zh-CN
     #[serde(rename = "languageCode")]
     pub language_code: Language,
+    /// 文档集合编号
+    #[serde(rename = "setId")]
+    pub set_id: String,
+    /// 文档版本号
+    #[serde(rename = "versionNumber")]
+    pub version_number: String,
 }
