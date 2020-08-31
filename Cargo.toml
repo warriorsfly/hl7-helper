@@ -1,5 +1,5 @@
 [workspace]
 members=[
-    "hl7_core",
+    "core",
     # "hl7_cda",
 ]
