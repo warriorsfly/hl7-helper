@@ -9,8 +9,6 @@ mod realm_code;
 mod xtime;
 mod xvalue;
 
-pub mod patient;
-
 pub use {
     address::*, code::*, house_type::*, id::*, language::*, organization::*, prop::*,
     realm_code::*, xtime::*, xvalue::*,
