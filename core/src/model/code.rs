@@ -1,5 +1,4 @@
 use serde::Deserialize;
-use validator::Validate;
 
 #[derive(Debug, Deserialize, PartialEq)]
 pub struct Code {

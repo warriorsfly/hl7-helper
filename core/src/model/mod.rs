@@ -4,12 +4,12 @@ mod house_type;
 mod id;
 mod language;
 mod organization;
-mod prop;
+mod person;
 mod realm_code;
 mod xtime;
 mod xvalue;
 
 pub use {
-    address::*, code::*, house_type::*, id::*, language::*, organization::*, prop::*,
+    address::*, code::*, house_type::*, id::*, language::*, organization::*, person::*,
     realm_code::*, xtime::*, xvalue::*,
 };
