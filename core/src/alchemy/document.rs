@@ -4,7 +4,7 @@ use serde::Deserialize;
 
 /// 地域代码
 #[derive(Debug, Deserialize, PartialEq)]
-pub struct Document<T> {
+pub struct Document {
     /// 区域代码
     #[serde(rename = "realmCode", default)]
     pub realm_code: RealmCode,

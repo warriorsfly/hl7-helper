@@ -4,3 +4,9 @@ use serde::Deserialize;
 pub struct Person {
     pub name: String,
 }
+
+impl Default for Person {
+    fn default() -> Self {
+        Self { name: "".into() }
+    }
+}
