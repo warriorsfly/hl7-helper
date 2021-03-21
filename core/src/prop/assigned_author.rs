@@ -1,5 +1,6 @@
-use crate::model::{Id, Organization, Person, XTime};
+use crate::model::{Id, Organization, Person};
 use serde::Deserialize;
+use validator::Validate;
 
 #[derive(Debug, Deserialize, PartialEq, Validate)]
 pub struct AssignedAuthor {

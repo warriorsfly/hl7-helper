@@ -1,5 +1,5 @@
 [package]
-name = "core"
+name = "actom"
 version = "0.1.0"
 authors = ["walker <warriorsfly@gmail.com>"]
 edition = "2018"
@@ -7,6 +7,4 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-quick-xml= { version = "0.22", features = [ "serialize" ] }
-serde = { version = "1", features = [ "derive" ] }
-validator = { version = "0.12", features = [ "derive" ] }
+actix = "0.11"
